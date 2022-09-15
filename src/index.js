@@ -292,8 +292,8 @@ SmoothPinCodeInput.propTypes = {
   cellStyleFocused: ViewPropTypes.style,
   cellStyleFilled: ViewPropTypes.style,
 
-  textStyle: Text.propTypes.style,
-  textStyleFocused: Text.propTypes.style,
+  textStyle: Text.style,
+  textStyleFocused: Text.style,
 
   animated: PropTypes.bool,
   animationFocused: PropTypes.oneOfType([
