@@ -134,6 +134,7 @@ class SmoothPinCodeInput extends Component {
       editable,
       inputProps,
       disableFullscreenUI,
+      cellTextProps,
     } = this.props;
     const { maskDelay, focused } = this.state;
     return (
@@ -214,6 +215,7 @@ class SmoothPinCodeInput extends Component {
                 {isCellText && !maskComponent && (
                   <Text
                     style={[textStyle, cellFocused ? textStyleFocused : {}]}
+                    {...cellTextProps}
                   >
                     {cellText}
                   </Text>
